@@ -22,9 +22,13 @@
 		027915991E558023001F588A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027915981E558023001F588A /* QuartzCore.framework */; };
 		0279159B1E55802B001F588A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279159A1E55802B001F588A /* Foundation.framework */; };
 		0279159D1E558054001F588A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279159C1E558054001F588A /* UIKit.framework */; };
-		027915A11E55813F001F588A /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 027915A01E55813F001F588A /* OpenGLView.m */; };
 		028B55CF1E56950100C4C565 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 028B55CE1E56950100C4C565 /* SimpleFragment.glsl */; };
 		028B55D11E56951900C4C565 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 028B55D01E56951900C4C565 /* SimpleVertex.glsl */; };
+		02F540551E5BEAA200EBA74C /* GLTriangles.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F540531E5BEAA200EBA74C /* GLTriangles.m */; };
+		02F540561E5BEAA200EBA74C /* GLTriangles.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F540541E5BEAA200EBA74C /* GLTriangles.xib */; };
+		02F540651E5C1C0400EBA74C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F540601E5C1C0400EBA74C /* BaseNavigationController.m */; };
+		02F540661E5C1C0400EBA74C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F540621E5C1C0400EBA74C /* BaseViewController.m */; };
+		02F540671E5C1C0400EBA74C /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F540641E5C1C0400EBA74C /* OpenGLView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +72,17 @@
 		027915981E558023001F588A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0279159A1E55802B001F588A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0279159C1E558054001F588A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		0279159F1E55813F001F588A /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
-		027915A01E55813F001F588A /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
 		028B55CE1E56950100C4C565 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 		028B55D01E56951900C4C565 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		02F540521E5BEAA200EBA74C /* GLTriangles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangles.h; sourceTree = "<group>"; };
+		02F540531E5BEAA200EBA74C /* GLTriangles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTriangles.m; sourceTree = "<group>"; };
+		02F540541E5BEAA200EBA74C /* GLTriangles.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLTriangles.xib; sourceTree = "<group>"; };
+		02F5405F1E5C1C0400EBA74C /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		02F540601E5C1C0400EBA74C /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		02F540611E5C1C0400EBA74C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		02F540621E5C1C0400EBA74C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		02F540631E5C1C0400EBA74C /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		02F540641E5C1C0400EBA74C /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,9 +197,9 @@
 		0279159E1E558102001F588A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				02F5405E1E5C1C0400EBA74C /* BaseClass */,
 				028B55C91E56938E00C4C565 /* Shaders */,
-				0279159F1E55813F001F588A /* OpenGLView.h */,
-				027915A01E55813F001F588A /* OpenGLView.m */,
+				02F540511E5BEA4900EBA74C /* 基础三角形绘制 */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -200,6 +211,29 @@
 				028B55CE1E56950100C4C565 /* SimpleFragment.glsl */,
 			);
 			path = Shaders;
+			sourceTree = "<group>";
+		};
+		02F540511E5BEA4900EBA74C /* 基础三角形绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				02F540521E5BEAA200EBA74C /* GLTriangles.h */,
+				02F540531E5BEAA200EBA74C /* GLTriangles.m */,
+				02F540541E5BEAA200EBA74C /* GLTriangles.xib */,
+			);
+			path = "基础三角形绘制";
+			sourceTree = "<group>";
+		};
+		02F5405E1E5C1C0400EBA74C /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				02F5405F1E5C1C0400EBA74C /* BaseNavigationController.h */,
+				02F540601E5C1C0400EBA74C /* BaseNavigationController.m */,
+				02F540611E5C1C0400EBA74C /* BaseViewController.h */,
+				02F540621E5C1C0400EBA74C /* BaseViewController.m */,
+				02F540631E5C1C0400EBA74C /* OpenGLView.h */,
+				02F540641E5C1C0400EBA74C /* OpenGLView.m */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +347,7 @@
 				0240DEE11E553CE6000DA130 /* Assets.xcassets in Resources */,
 				0240DEDF1E553CE6000DA130 /* Main.storyboard in Resources */,
 				028B55CF1E56950100C4C565 /* SimpleFragment.glsl in Resources */,
+				02F540561E5BEAA200EBA74C /* GLTriangles.xib in Resources */,
 				028B55D11E56951900C4C565 /* SimpleVertex.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,9 +374,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0240DEDC1E553CE6000DA130 /* ViewController.m in Sources */,
+				02F540661E5C1C0400EBA74C /* BaseViewController.m in Sources */,
 				0240DED91E553CE6000DA130 /* AppDelegate.m in Sources */,
 				0240DED61E553CE6000DA130 /* main.m in Sources */,
-				027915A11E55813F001F588A /* OpenGLView.m in Sources */,
+				02F540551E5BEAA200EBA74C /* GLTriangles.m in Sources */,
+				02F540671E5C1C0400EBA74C /* OpenGLView.m in Sources */,
+				02F540651E5C1C0400EBA74C /* BaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

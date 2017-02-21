@@ -7,14 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GLKit/GLKit.h>
+#import "BaseViewController.h"
 
-@interface ViewController : GLKViewController
-{
-    GLuint vertexBufferID;
-}
+@interface ViewController : BaseViewController
 
-
-@property (nonatomic, strong) GLKBaseEffect *baseEffect;
 @end
 
